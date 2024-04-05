@@ -1,0 +1,186 @@
+    .attribution { font-size: 11px; text-align: center; position: absolute; top: 0; left: 0;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+        margin: 0;
+    }
+
+    * {
+        font-size: 10px;
+    }
+
+    @font-face {
+        font-family: 'Work Sans';
+        src: url('assets/fonts/WorkSans-VariableFont_wght.ttf');
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Work Sans';
+        src: url('assets/fonts/WorkSans-Italic-VariableFont_wght.ttf');
+        font-style: italic;
+    }
+
+    .main-cont {
+        width: 1440px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .faq-bg {
+        width: 90%;
+        height: 96%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(275, 100%, 97%);
+        /*background-attachment: fixed;*/
+        background-image: url(assets/images/background-pattern-desktop.svg);
+        background-position: center top;
+        background-repeat: no-repeat;
+        box-shadow: 0px 12px 15px rgba(0,0,0,0.4);
+        position: relative;
+    }
+
+    .faq-card {
+        width: 60rem;
+        height: auto;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: hsl(0, 0%, 100%);
+        box-shadow: 0px 2px 40px rgba(0,0,0,0.2);
+        font-family: 'Work Sans';
+        box-sizing: border-box;
+        padding-inline: 3rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .faq-top {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        gap: 6%;
+    }
+
+    .faq-star-icon {
+        margin-top: 3.5rem;
+    }
+
+    .faq-header {
+        font-size: 5.5rem;
+        margin-bottom: .5rem;
+    }
+
+    .faq-list {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq-list__item {
+        width: 100%;
+        padding-block: 2rem;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        border-bottom: solid rgba(100,100,100,0.1) 1px;
+    }
+
+    .faq-list__item:last-child {
+        border-bottom: none;
+    }
+
+    .faq-list__header-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .faq-list__open {
+        margin-right: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border: solid blue 1px;
+    }
+
+    .faq-plus {
+        position: absolute;
+    }
+
+    .faq-minus {
+        position: absolute;
+    }
+
+    .faq-hide {
+        opacity: 0;
+    }
+
+    .faq-list__header {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: hsl(292, 42%, 14%);
+        transition: all 200ms;
+    }
+
+    .faq-list__header-wrap:hover .faq-list__header {
+        color: #AE2BF5;
+        transition: all 200ms;
+    }
+
+    .faq-list__para {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        color: hsl(292, 16%, 49%);
+    }
+
+    .faq-drop {
+        max-height: 0;
+        overflow: hidden;
+        margin-bottom: -1rem;
+        transition: max-height 500ms;
+    }
+
+    .faq-show {
+        height: auto;
+        opacity: 1;
+        display: flex;
+    }
+
+    .faq-hide {
+        height: 0;
+        opacity: 0;
+    }
+
+    @media screen and (max-width: 1440px) {
+        .main-cont {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 665px) {
+        .faq-list__header {
+            width: 84%;
+        }
+
+        .faq-card {
+            padding-inline: 2rem;
+        }
+
+        .faq-list__para {
+            font-size: 1.5rem;
+        }
+    }
