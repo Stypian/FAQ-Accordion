@@ -88,7 +88,7 @@
 
     .faq-list__item {
         width: 100%;
-        padding-block: 2rem;
+        padding-block: 1.5rem;
         display: flex;
         align-items: flex-start;
         flex-direction: column;
