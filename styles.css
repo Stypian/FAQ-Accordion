@@ -116,6 +116,10 @@
         position: relative;
     }
 
+    .faq-open-height {
+        max-height: 128px !important;
+    }
+
     .faq-plus {
         position: absolute;
     }
