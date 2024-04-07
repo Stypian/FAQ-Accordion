@@ -21,13 +21,14 @@ for (t = 0; t < faqOpen.length; t++) {
   plusMinus(t);
   faqOpen[t].addEventListener("click", function() {
     let show = this.nextElementSibling;
-    if (show.style.maxHeight) {
-      show.style.maxHeight = null;
+    if (show.classList.contains("faq-open-height")) {
+      show.classList.remove("faq-open-height");
     } else {
-      show.style.maxHeight = show.scrollHeight + "px";
+      show.classList.add("faq-open-height");
     }
   })
 }
+
 
 
 
